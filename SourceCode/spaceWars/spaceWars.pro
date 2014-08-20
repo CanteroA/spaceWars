@@ -15,4 +15,12 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    basicGraphic/basicgraphic.cpp \
+    point.cpp \
+    graphicchar.cpp
+
+HEADERS += \
+    basicGraphic/basicgraphic.h \
+    point.h \
+    graphicchar.h
