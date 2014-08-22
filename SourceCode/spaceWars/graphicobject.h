@@ -14,9 +14,10 @@ private:
     int _fieldLimitRight, _fieldLimitLeft, _fieldLimitDown, _fieldLimitTop;
     QList<point>hitAreaRight, hitAreaLeft, hitAreaDown, hitAreaUp;
     unsigned char _keyPosRight, _keyPosLeft, _keyPosUp, _keyPosDown;
-    int _edgeRight, _edgeLeft, _edgeTop, _edgeDown;
+    //int _edgeRight, _edgeLeft, _edgeTop, _edgeDown;
     int _hitPower;
 public:
+    //initialize all members
     graphicObject();
     int paint();
     int tic(double time);

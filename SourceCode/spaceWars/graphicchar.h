@@ -11,7 +11,7 @@ private:
     unsigned char _char;
     unsigned char _color;
 public:
-    graphicChar(point pos, unsigned char ch, unsigned char colour);
+    graphicChar(point pos, unsigned char ch, unsigned char colour = BG_WHITE);
     graphicChar();
     int paint(point offset);
 };
