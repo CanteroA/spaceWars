@@ -9,27 +9,27 @@ int main(int argc, char *argv[])
 
     graphicChar c1(point(1, 3), 17, BG_GREEN);
     graphicChar c2(point(2, 2), '/', BG_GREEN);
-    graphicChar c3(point(2, 3), '<', BG_GREEN);
+    graphicChar c3(point(2, 3), '<', BG_RED);
     graphicChar c4(point(2, 4), '\\', BG_GREEN);
     graphicChar c5(point(3, 2), '<', BG_GREEN);
-    graphicChar c6(point(3, 3), 2 , BG_GREEN);
+    graphicChar c6(point(3, 3), 2 , BG_WHITE);
     graphicChar c7(point(3, 4), '<', BG_GREEN);
     graphicChar c8(point(4, 2), '<', BG_GREEN);
-    graphicChar c9(point(4, 3), 'K', BG_GREEN);
+    graphicChar c9(point(4, 3), 'K', BG_CYAN);
     graphicChar c10(point(4, 4), '<', BG_GREEN);
     graphicChar c11(point(5, 2), '-', BG_GREEN);
-    graphicChar c12(point(5, 3),219 , BG_GREEN);
+    graphicChar c12(point(5, 3),219 , BG_WHITE);
     graphicChar c13(point(5, 4), '-', BG_GREEN);
     graphicChar c14(point(6, 2), '-', BG_GREEN);
-    graphicChar c15(point(6, 3), 219, BG_GREEN);
+    graphicChar c15(point(6, 3), 219, BG_WHITE);
     graphicChar c16(point(6, 4), '-', BG_GREEN);
-    graphicChar c17(point(7, 1), 187, BG_GREEN);
+    graphicChar c17(point(7, 1), 187, BG_RED);
     graphicChar c18(point(7, 2), '|', BG_GREEN);
     graphicChar c19(point(7, 3), '|', BG_GREEN);
     graphicChar c20(point(7, 4), '|', BG_GREEN);
-    graphicChar c21(point(7, 5), 188, BG_GREEN);
-    graphicChar c22(point(8, 2), '<', BG_GREEN);
-    graphicChar c23(point(8, 4), '<', BG_GREEN);
+    graphicChar c21(point(7, 5), 188, BG_RED);
+    graphicChar c22(point(8, 2), '<', BG_YELLOW);
+    graphicChar c23(point(8, 4), '<', BG_YELLOW);
 
     point off(40, 5);
     c1.paint(off);
