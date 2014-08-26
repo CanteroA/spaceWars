@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     graphicChar c22(point(8, 2), '<', BG_YELLOW);
     graphicChar c23(point(8, 4), '<', BG_YELLOW);
 
-    point off(40, 5);
+    point off(15, 5);
     c1.paint(off);
     c2.paint(off);
     c3.paint(off);
@@ -56,6 +56,55 @@ int main(int argc, char *argv[])
     c22.paint(off);
     c23.paint(off);
 
+
+    graphicChar d1(point(1, 2), '>', BG_YELLOW);
+    graphicChar d2(point(1, 4), '>', BG_YELLOW);
+    graphicChar d3(point(2, 1), 201, BG_RED);
+    graphicChar d4(point(2, 2), '|', BG_GREEN);
+    graphicChar d5(point(2, 3), '|', BG_GREEN);
+    graphicChar d6(point(2, 4), '|', BG_GREEN);
+    graphicChar d7(point(2, 5), 200, BG_RED);
+    graphicChar d8(point(3, 2), '-', BG_GREEN);
+    graphicChar d9(point(3, 3), 219, BG_WHITE);
+    graphicChar d10(point(3, 4), '-', BG_GREEN);
+    graphicChar d11(point(4, 2), '-', BG_GREEN);
+    graphicChar d12(point(4, 3), 219, BG_WHITE);
+    graphicChar d13(point(4, 4), '-', BG_GREEN);
+    graphicChar d14(point(5, 2), '>', BG_GREEN);
+    graphicChar d15(point(5, 3), 'K', BG_CYAN);
+    graphicChar d16(point(5, 4), '>', BG_GREEN);
+    graphicChar d17(point(6, 2), '>', BG_GREEN);
+    graphicChar d18(point(6, 3), 1, BG_WHITE);
+    graphicChar d19(point(6, 4), '>', BG_GREEN);
+    graphicChar d20(point(7, 2), '\\', BG_GREEN);
+    graphicChar d21(point(7, 3), '>', BG_RED);
+    graphicChar d22(point(7, 4), '/', BG_GREEN);
+    graphicChar d23(point(8, 3), 16, BG_GREEN);
+
+    point loff(15, 10);
+    d1.paint(loff);
+    d2.paint(loff);
+    d3.paint(loff);
+    d4.paint(loff);
+    d5.paint(loff);
+    d6.paint(loff);
+    d7.paint(loff);
+    d8.paint(loff);
+    d9.paint(loff);
+    d10.paint(loff);
+    d11.paint(loff);
+    d12.paint(loff);
+    d13.paint(loff);
+    d14.paint(loff);
+    d15.paint(loff);
+    d16.paint(loff);
+    d17.paint(loff);
+    d18.paint(loff);
+    d19.paint(loff);
+    d20.paint(loff);
+    d21.paint(loff);
+    d22.paint(loff);
+    d23.paint(loff);
 
 
 
