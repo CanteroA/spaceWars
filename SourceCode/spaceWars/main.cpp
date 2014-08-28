@@ -7,6 +7,8 @@ int main(int argc, char *argv[])
     (void)argc;
     (void)argv;
 
+    //Rocket to left
+    
     graphicChar c1(point(1, 3), 17, BG_GREEN);
     graphicChar c2(point(2, 2), '/', BG_GREEN);
     graphicChar c3(point(2, 3), '<', BG_RED);
@@ -57,6 +59,8 @@ int main(int argc, char *argv[])
     c23.paint(off);
 
 
+    //Rocket to Right
+    
     graphicChar d1(point(1, 2), '>', BG_YELLOW);
     graphicChar d2(point(1, 4), '>', BG_YELLOW);
     graphicChar d3(point(2, 1), 201, BG_RED);
@@ -106,8 +110,108 @@ int main(int argc, char *argv[])
     d22.paint(loff);
     d23.paint(loff);
 
+    
+    //Rocket down
+    
+    graphicChar l1(point(2, 1), 'v', BG_YELLOW);
+    graphicChar l2(point(4, 1), 'v', BG_YELLOW);
+    graphicChar l3(point(1, 2), 201, BG_RED);
+    graphicChar l4(point(2, 2), '-', BG_GREEN);
+    graphicChar l5(point(3, 2), '-', BG_GREEN);
+    graphicChar l6(point(4, 2), '-', BG_GREEN);
+    graphicChar l7(point(5, 2), 187, BG_RED);
+    graphicChar l8(point(2, 3), '|', BG_GREEN);
+    graphicChar l9(point(3, 3), 219, BG_WHITE);
+    graphicChar l10(point(4, 3), '|', BG_GREEN);
+    graphicChar l11(point(2, 4), '|', BG_GREEN);
+    graphicChar l12(point(3, 4), 219, BG_WHITE);
+    graphicChar l13(point(2, 5), 'V', BG_GREEN);
+    graphicChar l14(point(3, 5), 1, BG_GREEN);
+    graphicChar l15(point(4, 5), 'V', BG_CYAN);
+    graphicChar l16(point(2, 6), 'V', BG_GREEN);
+    graphicChar l17(point(3, 6), 'K', BG_GREEN);
+    graphicChar l18(point(4, 6), 'V', BG_WHITE);
+    graphicChar l19(point(2, 7), '\\', BG_GREEN);
+    graphicChar l20(point(3, 7), 'V', BG_GREEN);
+    graphicChar l21(point(4, 7), '/', BG_RED);
+    graphicChar l22(point(3, 8), 31, BG_GREEN);
+    graphicChar l23(point(4, 4), '|', BG_GREEN);
+    
+    point doff(30, 10);
+    l1.paint(doff);
+    l2.paint(doff);
+    l3.paint(doff);
+    l4.paint(doff);
+    l5.paint(doff);
+    l6.paint(doff);
+    l7.paint(doff);
+    l8.paint(doff);
+    l9.paint(doff);
+    l10.paint(doff);
+    l11.paint(doff);
+    l12.paint(doff);
+    l13.paint(doff);
+    l14.paint(doff);
+    l15.paint(doff);
+    l16.paint(doff);
+    l17.paint(doff);
+    l18.paint(doff);
+    l19.paint(doff);
+    l20.paint(doff);
+    l21.paint(doff);
+    l22.paint(doff);
+    l23.paint(doff);
 
 
+    //Rocket Up
+    graphicChar u1(point(3, 1), 30, BG_YELLOW);
+    graphicChar u2(point(2, 2), '/', BG_YELLOW);
+    graphicChar u3(point(3, 2), '^', BG_RED);
+    graphicChar u4(point(4, 2), '\\', BG_GREEN);
+    graphicChar u5(point(2, 3), '^', BG_GREEN);
+    graphicChar u6(point(3, 3), 1, BG_GREEN);
+    graphicChar u7(point(4, 3), '^', BG_RED);
+    graphicChar u8(point(2, 4), '^', BG_GREEN);
+    graphicChar u9(point(3, 4), 'K', BG_WHITE);
+    graphicChar u10(point(4, 4), '^', BG_GREEN);
+    graphicChar u11(point(2, 5), '|', BG_GREEN);
+    graphicChar u12(point(3, 5), 219, BG_WHITE);
+    graphicChar u13(point(5, 5), '|', BG_GREEN);
+    graphicChar u14(point(2, 6), '|', BG_GREEN);
+    graphicChar u15(point(3, 6), 219, BG_CYAN);
+    graphicChar u16(point(4, 6), '|', BG_GREEN);
+    graphicChar u17(point(1, 7), 200, BG_GREEN);
+    graphicChar u18(point(2, 7), '-', BG_WHITE);
+    graphicChar u19(point(3, 7), '-', BG_GREEN);
+    graphicChar u20(point(4, 7), '-', BG_GREEN);
+    graphicChar u21(point(5, 7), 188, BG_RED);
+    graphicChar u22(point(2, 8), '^', BG_GREEN);
+    graphicChar u23(point(4, 8), '^', BG_GREEN);
+
+    point uoff(45, 10);
+    u1.paint(uoff);
+    u2.paint(uoff);
+    u3.paint(uoff);
+    u4.paint(uoff);
+    u5.paint(uoff);
+    u6.paint(uoff);
+    u7.paint(uoff);
+    u8.paint(uoff);
+    u9.paint(uoff);
+    u10.paint(uoff);
+    u11.paint(uoff);
+    u12.paint(uoff);
+    u13.paint(uoff);
+    u14.paint(uoff);
+    u15.paint(uoff);
+    u16.paint(uoff);
+    u17.paint(uoff);
+    u18.paint(uoff);
+    u19.paint(uoff);
+    u20.paint(uoff);
+    u21.paint(uoff);
+    u22.paint(uoff);
+    u23.paint(uoff);
 
 
 
