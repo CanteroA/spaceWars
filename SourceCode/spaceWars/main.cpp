@@ -1,6 +1,7 @@
 #include <iostream>
 #include "basicGraphic/basicgraphic.h"
 #include "graphicchar.h"
+#include "graphicobject.h"
 
 int main(int argc, char *argv[])
 {
@@ -9,7 +10,7 @@ int main(int argc, char *argv[])
 
     //Rocket to left
     
-    graphicChar c1(point(1, 3), 17, BG_GREEN);
+   /* graphicChar c1(point(1, 3), 17, BG_GREEN);
     graphicChar c2(point(2, 2), '/', BG_GREEN);
     graphicChar c3(point(2, 3), '<', BG_RED);
     graphicChar c4(point(2, 4), '\\', BG_GREEN);
@@ -211,9 +212,21 @@ int main(int argc, char *argv[])
     u20.paint(uoff);
     u21.paint(uoff);
     u22.paint(uoff);
-    u23.paint(uoff);
+    u23.paint(uoff);*/
 
+    graphicObject prueba;
+    prueba.setFieldLimits(50, 0, 0, 8);
+    prueba.setDir(DIR_DOWN);
+    prueba.setSpeed(0.001);
+    prueba.setPos(3,3);
+    for(;;)
+    {
+       bg::clrscr();
+        prueba.paint();
+        prueba.tic(1000);
+        Sleep(1000);
 
+    }
 
     bg::gotoxy(0, 40);
     bg::setColor();

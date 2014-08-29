@@ -24,12 +24,17 @@ void point::setY(int y)
     _posY = y;
 }
 
-int point::x()
+int point::x() const
 {
     return _posX;
 }
 
-int point::y()
+int point::y() const
 {
     return _posY;
+}
+
+bool operator==(const point &p1, const point &p2)
+{
+    return (p1.x()==p2.x())&&(p1.y()==p2.y());
 }

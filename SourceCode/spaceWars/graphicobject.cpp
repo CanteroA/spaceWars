@@ -131,7 +131,7 @@ int graphicObject::tic(double time)
         return -1;
         break;
     }
-    if(inside = true)
+    if(inside == true)
     {
         _pos = newPos;                //Si la nave está dentro
     }
@@ -164,11 +164,112 @@ int graphicObject::tic(double time)
 
 int graphicObject::checkHit(point p)
 {
+    p.setX(p.x()-_pos.x());
+    p.setY(p.y()-_pos.y());
+    QList<point>* currentHitArea;
+    switch (_direction) {
+    case DIR_RIHT:
+        currentHitArea = & hitAreaRight;
+        break;
+    case DIR_LEFT:
+        currentHitArea = &hitAreaLeft;
+        break;
+    case DIR_UP:
+        currentHitArea= & hitAreaUp;
+        break;
+    case DIR_DOWN:
+        currentHitArea =&hitAreaDown;
+        break;
+  }
+    for(int i=0; i<currentHitArea->size(); i++)
+  {
+        if(p==currentHitArea->at(i))
+            return 1;
+    }
+    return 0;
+}
+
+
+//Check point by point
+int graphicObject::checkHit(QList<point> points)
+{
+    int countPoints = 0;
+    for(int i=0;0<points.size();i++)
+        countPoints += checkHit(points[i]); //count = count+2
+    return countPoints;
 
 }
 
-int graphicObject::checkHit(QList<point> points)
+void graphicObject::setPos(int x, int y)
 {
+    _pos.setX(x);
+    _pos.setY(y);
+}
+
+void graphicObject::setSpeed(float speed)
+{
+    _speed = speed;
+}
+
+void graphicObject::setFieldLimits(int right, int left, int top, int down)
+{
+    _fieldLimitDown = down;
+    _fieldLimitLeft = left;
+    _fieldLimitRight = right;
+    _fieldLimitTop = top;
+}
+
+bool graphicObject::setDir(char direction)
+{
+    if (direction > 3 || direction < 0)                             //Validar si está la dirección en los rangos
+        return false;
+    _direction = direction;
+
+    //Referencia del hit area
+    QList<point>* currentHitArea;
+    switch (_direction) {
+    case DIR_RIHT:
+        currentHitArea = & hitAreaRight;
+        break;
+    case DIR_LEFT:
+        currentHitArea = &hitAreaLeft;
+        break;
+    case DIR_UP:
+        currentHitArea= & hitAreaUp;
+        break;
+    case DIR_DOWN:
+        currentHitArea =&hitAreaDown;
+        break;
+  }
+
+    if (currentHitArea->size() == 0)
+        return false;
+
+    int maxX = currentHitArea->at(0).x();
+    int minX = currentHitArea->at(0).x();
+    int maxY = currentHitArea->at(0).y();
+    int minY = currentHitArea->at(0).y();
+
+    for (int i = 0; i<currentHitArea->size(); i++)
+    {
+        if(currentHitArea->at(i).x())
+            maxX = currentHitArea->at(i).x();
+
+        if(currentHitArea->at(i).x())
+            minX = currentHitArea->at(i).x();
+
+
+        if(currentHitArea->at(i).y())
+            maxY = currentHitArea->at(i).y();
+
+        if(currentHitArea->at(i).y())
+            minY = currentHitArea->at(i).y();
+    }
+          _edgeDown = minY;
+          _edgeLeft = minX;
+          _edgeRight = maxX;
+          _edgeTop = maxY;
+
 
 }
 

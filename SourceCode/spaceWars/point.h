@@ -12,8 +12,9 @@ public:
     point();
     void setX(int x);
     void setY(int y);
-    int x();
-    int y();
+    int x() const;
+    int y() const;
 };
+bool operator==(const point& p1, const point& p2);
 
 #endif // POINT_H

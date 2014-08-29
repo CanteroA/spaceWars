@@ -29,6 +29,10 @@ public:
     int tic(double time); //Dado en milisegundos
     int checkHit(point p);
     int checkHit(QList<point>points);
+    void setPos(int x, int y);
+    void setSpeed(float speed);
+    void setFieldLimits(int right, int left, int top, int down);
+    bool setDir(char direction);
 };
 
 #endif // GRAPHICOBJECT_H
