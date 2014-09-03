@@ -1,7 +1,7 @@
 #include "point.h"
 
 
-point::point(int x, int y)
+point::point(float x, float y)
 {
     _posX = x;
     _posY = y;
@@ -14,25 +14,37 @@ point::point()
 
 }
 
-void point::setX(int x)
+void point::setX(float x)
 {
     _posX = x;
 }
 
-void point::setY(int y)
+void point::setY(float y)
 {
     _posY = y;
 }
 
-int point::x() const
+float point::x() const
 {
     return _posX;
 }
 
-int point::y() const
+float point::y() const
 {
     return _posY;
 }
+
+int point::xInit() const
+{
+    return (int) _posX;
+}
+
+int point::yInit() const
+{
+    return (int) _posY;
+}
+
+
 
 bool operator==(const point &p1, const point &p2)
 {

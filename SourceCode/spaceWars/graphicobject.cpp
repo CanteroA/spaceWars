@@ -112,19 +112,19 @@ int graphicObject::tic(double time)
     bool inside=true;
     switch (_direction) {
     case DIR_RIHT:
-        if(newPos.x() + _edgeRight >= _fieldLimitRight)
+        if(newPos.xInit() + _edgeRight >= _fieldLimitRight)
             inside = false;
         break;
     case DIR_LEFT:
-        if(newPos.x() <= _fieldLimitLeft)
+        if(newPos.xInit() <= _fieldLimitLeft)
             inside = false;
         break;
     case DIR_UP:
-        if(newPos.y() <= _fieldLimitTop)
+        if(newPos.yInit() <= _fieldLimitTop)
             inside = false;
         break;
     case DIR_DOWN:
-        if(newPos.y() + _edgeDown >= _fieldLimitDown)
+        if(newPos.yInit() + _edgeDown >= _fieldLimitDown)
             inside = false;
         break;
     default:

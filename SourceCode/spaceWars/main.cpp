@@ -215,16 +215,16 @@ int main(int argc, char *argv[])
     u23.paint(uoff);*/
 
     graphicObject prueba;
-    prueba.setFieldLimits(50, 0, 0, 8);
+    prueba.setFieldLimits(50, 0, 0, 25);
     prueba.setDir(DIR_DOWN);
-    prueba.setSpeed(0.001);
+    prueba.setSpeed(0.008);
     prueba.setPos(3,3);
     for(;;)
     {
        bg::clrscr();
         prueba.paint();
-        prueba.tic(1000);
-        Sleep(1000);
+        prueba.tic(300);
+        Sleep(300);
 
     }
 
